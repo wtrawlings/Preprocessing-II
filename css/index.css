@@ -168,6 +168,26 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+header {
+  display: block;
+  height: 100px;
+  border-bottom: 2px dashed black;
+}
+header .head-size {
+  width: 800px;
+  display: flex;
+  border: 2px solid red;
+}
+header .head-size h1 {
+  justify-content: flex-start;
+}
+header .head-size nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .head-size nav a {
+  font-size: 1.8rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
