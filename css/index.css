@@ -175,7 +175,8 @@ header {
 }
 header .head-size {
   width: 800px;
-  display: flex;
+  justify-content: center
+        display: flex;
   border: 2px solid red;
 }
 header .head-size h1 {
