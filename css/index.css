@@ -170,24 +170,32 @@ img {
 }
 header {
   display: block;
-  height: 100px;
-  border-bottom: 2px dashed black;
+  height: 90px;
+  border-bottom: 2px dashed grey;
 }
 header .head-size {
   width: 800px;
-  justify-content: center
-        display: flex;
-  border: 2px solid red;
-}
-header .head-size h1 {
-  justify-content: flex-start;
-}
-header .head-size nav {
+  height: 90px;
+  margin: auto;
   display: flex;
+  align-items: center;
+}
+header .head-size .nav-control {
+  display: flex;
+  width: 80%;
   justify-content: flex-end;
 }
-header .head-size nav a {
-  font-size: 1.8rem;
+header .head-size .nav-control nav {
+  display: flex;
+  justify-content: space-around;
+}
+header .head-size .nav-control nav a {
+  font-size: 1.6rem;
+  padding: 0px 15px;
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
 }
 .footer {
   width: 100%;
