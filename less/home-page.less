@@ -1,3 +1,13 @@
+//used this statement class for the header styling
+.statement {
+  margin: 20px 0px;
+  padding-bottom: 10px;
+  border-bottom: @border;
+  @media(max-width: 500px) {
+    padding: 0% 5%;
+  }
+}
+
 .home {
 
   .content-section {
@@ -5,18 +15,29 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    @media(max-width: 500px) {
+      flex-direction: column;
+      width: @content-width-mobile;
+      padding-left: 5%;
+    }
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media(max-width: 500px) {
+        flex-direction: column;
+        width: @content-width-mobile;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media(max-width: 500px) {
+        flex-direction: column;
+        width: @content-width-mobile;
+      }
       img {
         border-radius: 10px;
       }
@@ -26,7 +47,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media(max-width: 500px) {
+      flex-direction: column-reverse;
+      width: @content-width-mobile;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -52,10 +76,21 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media(max-width: 500px) {
+      flex-direction: column;
+      width: @content-width-mobile;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn {
+        .btn-blue();
+      }
+      @media(max-width: 500px) {
+        flex-direction: column;
+        width: @content-width-mobile;
+      }
     }
   }
 }// home
